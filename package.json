@@ -3,6 +3,8 @@
   "version":     "0.0.1",
   "description": "node pdf creator",
   "dependencies": {
-    "pdfkit": "0.1.6"
+    "pdfkit": "0.1.6",
+    "coffee-script": "1.2.0",
+    "flate": "1.0.5"
   }
 }
