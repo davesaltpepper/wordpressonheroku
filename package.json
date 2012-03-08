@@ -1,0 +1,8 @@
+{
+  "name":        "peedf",
+  "version":     "0.0.1",
+  "description": "node pdf creator",
+  "dependencies": {
+    "pdfkit": "0.1.6"
+  }
+}
