@@ -19,7 +19,7 @@ if(file_exists( dirname(_FILE_).'/wp-config_local.php')){
 
 	include( dirname(_FILE_).'/wp-config_local.php');
 }else{
-	$db = parse_url($_ENV["CLEARDB_DATABASE_URL"]);)
+	$db = parse_url($_ENV["CLEARDB_DATABASE_URL"]);
 	
 	/** The name of the database for WordPress */
 	define('DB_NAME', trim($db["path"],"/"));
