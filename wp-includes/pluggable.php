@@ -390,8 +390,15 @@ function wp_mail( $to, $subject, $message, $headers = '', $attachments = array()
 		}
 	}
 
-	// Set to use PHP's mail()
-	$phpmailer->IsMail();
+	// Set to use Sendgrid's SMTP service
+	$phpmailer->IsSMTP();
+	$phpmailer->Host = 'smtp.sendgrid.net';
+	$phpmailer->Username = $_ENV["SENDGRID_USERNAME"];
+	$phpmailer->Password = $_ENV["SENDGRID_PASSWORD"];
+	$phpmailer->Hostname = $_ENV["SERVER_NAME"];
+	$phpmailer->Port = 587;
+	$phpmailer->SMTPAuth = true;
+	$phpmailer->SMTPSecure = 'tls';
 
 	// Set Content-Type and charset
 	// If we don't have a content-type from the input headers
