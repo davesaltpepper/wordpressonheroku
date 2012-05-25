@@ -24,7 +24,8 @@
 
 			<div id="site-generator">
 				<?php do_action( 'twentyeleven_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyeleven' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyeleven' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'twentyeleven' ), 'WordPress' ); ?></a>
+				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyeleven' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyeleven' ); ?>" rel="generator"><?php printf( __( 'Proudly coded by %s', 'twentyeleven' ), 'david' ); ?></a>
+				<h6 style="text-align:center"><?php bloginfo( 'url' ); ?></h6>
 			</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->

@@ -509,6 +509,7 @@ a:hover {
 #site-title {
 	margin-right: 270px;
 	padding: 3.65625em 0 0;
+	color:orange;
 }
 #site-title a {
 	color: #111;
