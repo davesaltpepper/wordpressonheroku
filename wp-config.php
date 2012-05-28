@@ -25,7 +25,7 @@ if(file_exists( dirname(_FILE_).'/wp-config_local.php')){
 	define('DB_NAME', trim($db["path"],"/"));
 	
 	/** MySQL database username */
-	define('DB_USER', $db["user"]);
+	define('DB_USER', $db["user"]);  
 	
 	/** MySQL database password */
 	define('DB_PASSWORD', $db["pass"]);
