@@ -12,5 +12,3 @@
 	
 	/** MySQL hostname */
 	define('DB_HOST', "localhost");
-	
-	
